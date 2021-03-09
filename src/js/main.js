@@ -1,5 +1,16 @@
 var frase = jQuery(".frase").text();
 var tamanhoFrase = frase.split(" ").length;
 var numPalavras = $('.numPalavras');
+var campo = $("#areaTxt");
+var conteudo = campo.split(" ");
+var caracter = $(".caracter");
 
-numPalavras.text(tamanhoFrase);
+
+campo.on("input", function(){
+    caracter.text(campo.val().length)
+    conteudo.text(tamanhoFrase);
+    
+});
+
+
+
