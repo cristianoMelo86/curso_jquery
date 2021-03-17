@@ -88,7 +88,7 @@ gulp.task("server", gulp.series(function() {
 	
 }));
 
-gulp.task("default", gulp.series(["move-js","move-files", "move-assets",/*"sass",*/ "html", "server"]));
+gulp.task("default", gulp.series(["move-js","move-files", "move-assets","sass","html", "server"]));
 
 
 
